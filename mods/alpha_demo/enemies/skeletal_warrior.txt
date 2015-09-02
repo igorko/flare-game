@@ -1,0 +1,53 @@
+INCLUDE enemies/base/skeleton.txt
+
+name=Skeletal Warrior
+level=5
+categories=skeletal_warrior,skeleton,undead,dungeon
+xp=20
+
+waypoint_pause=1s
+
+# combat stats
+hp=130
+speed=5
+turn_delay=200ms
+
+chance_pursue=25
+
+# blood strike
+power=melee,5,10
+# piercing strike
+power=melee,39,10
+
+accuracy=81
+avoidance=37
+
+dmg_melee_min=15
+dmg_melee_max=40
+dmg_ment_min=25
+dmg_ment_max=60
+
+absorb_min=12
+absorb_max=12
+
+vulnerable_fire=150
+vulnerable_ice=75
+cooldown=666ms
+
+# loot
+loot=loot/leveled_mid.txt
+
+# shortsword, chain armor, iron buckler
+loot=33,5
+loot=89,5
+loot=90,5
+loot=91,5
+loot=92,5
+loot=57,5
+
+# blood gear, long sword, crest shield, duelist guants
+loot=116,1
+loot=117,1
+loot=34,1
+loot=58,1
+loot=115,1

@@ -1,0 +1,13 @@
+INCLUDE enemies/base/beacon.txt
+
+sfx_phys=soundfx/enemies/wyvern_phys.ogg
+sfx_ment=soundfx/enemies/wyvern_ment.ogg
+sfx_hit=soundfx/enemies/wyvern_hit.ogg
+sfx_die=soundfx/enemies/wyvern_die.ogg
+sfx_critdie=soundfx/enemies/wyvern_critdie.ogg
+
+animations=animations/enemies/wyvern.txt
+
+flying=1
+melee_range=1.125
+threat_range=8.0

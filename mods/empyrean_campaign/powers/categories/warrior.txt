@@ -1,0 +1,307 @@
+####
+### Swing
+####
+
+[power]
+id=1
+name=Swing
+type=fixed
+icon=1
+description=Basic melee attack.
+new_state=swing
+face=true
+use_hazard=true
+base_damage=melee
+lifespan=33ms
+radius=1.0
+starting_pos=melee
+aim_assist=true
+
+
+
+####
+### Block
+####
+
+[power]
+id=2
+INCLUDE powers/base/warrior/block.txt
+post_effect=reflect_chance,50,0
+post_effect=absorb_min,10,0
+post_effect=absorb_max,10,0
+
+[power]
+id=3
+INCLUDE powers/base/warrior/block.txt
+post_effect=reflect_chance,60,0
+post_effect=absorb_min,20,0
+post_effect=absorb_max,20,0
+
+[power]
+id=4
+INCLUDE powers/base/warrior/block.txt
+post_effect=reflect_chance,70,0
+post_effect=absorb_min,30,0
+post_effect=absorb_max,30,0
+
+[power]
+id=5
+INCLUDE powers/base/warrior/block.txt
+post_effect=reflect_chance,80,0
+post_effect=absorb_min,40,0
+post_effect=absorb_max,40,0
+
+[power]
+id=6
+INCLUDE powers/base/warrior/block.txt
+post_effect=reflect_chance,90,0
+post_effect=absorb_min,50,0
+post_effect=absorb_max,50,0
+
+
+
+####
+### Blood Strike
+####
+
+[power]
+id=7
+INCLUDE powers/base/warrior/blood_strike.txt
+requires_mp=2
+post_effect=bleeding,4,5s
+
+[power]
+id=8
+INCLUDE powers/base/warrior/blood_strike.txt
+requires_mp=4
+post_effect=bleeding,5,5s
+
+[power]
+id=9
+INCLUDE powers/base/warrior/blood_strike.txt
+requires_mp=6
+post_effect=bleeding,6,5s
+
+[power]
+id=10
+INCLUDE powers/base/warrior/blood_strike.txt
+requires_mp=8
+post_effect=bleeding,7,5s
+
+[power]
+id=11
+INCLUDE powers/base/warrior/blood_strike.txt
+requires_mp=10
+post_effect=bleeding,8,5s
+
+
+
+####
+### Warcry
+####
+
+[power]
+id=12
+INCLUDE powers/base/warrior/warcry.txt
+requires_mp=4
+cooldown=40s
+
+[power]
+id=13
+INCLUDE powers/base/warrior/warcry.txt
+requires_mp=8
+cooldown=35s
+
+[power]
+id=14
+INCLUDE powers/base/warrior/warcry.txt
+requires_mp=12
+cooldown=30s
+
+[power]
+id=15
+INCLUDE powers/base/warrior/warcry.txt
+requires_mp=16
+cooldown=25s
+
+[power]
+id=16
+INCLUDE powers/base/warrior/warcry.txt
+requires_mp=20
+cooldown=20s
+
+
+
+####
+### Cleave
+####
+
+[power]
+id=17
+INCLUDE powers/base/warrior/cleave.txt
+requires_mp=3
+modifier_damage=multiply,40,0
+
+[power]
+id=18
+INCLUDE powers/base/warrior/cleave.txt
+requires_mp=6
+modifier_damage=multiply,60,0
+
+[power]
+id=19
+INCLUDE powers/base/warrior/cleave.txt
+requires_mp=9
+modifier_damage=multiply,80,0
+
+[power]
+id=20
+INCLUDE powers/base/warrior/cleave.txt
+requires_mp=12
+modifier_damage=multiply,100,0
+
+[power]
+id=21
+INCLUDE powers/base/warrior/cleave.txt
+requires_mp=16
+modifier_damage=multiply,120,0
+
+
+
+####
+### Throw Knife
+####
+
+[power]
+id=22
+INCLUDE powers/base/warrior/throw_knife.txt
+requires_mp=2
+modifier_damage=multiply,40,0
+
+[power]
+id=23
+INCLUDE powers/base/warrior/throw_knife.txt
+requires_mp=4
+modifier_damage=multiply,50,0
+
+[power]
+id=24
+INCLUDE powers/base/warrior/throw_knife.txt
+requires_mp=6
+modifier_damage=multiply,60,0
+
+[power]
+id=25
+INCLUDE powers/base/warrior/throw_knife.txt
+requires_mp=8
+modifier_damage=multiply,70,0
+
+[power]
+id=26
+INCLUDE powers/base/warrior/throw_knife.txt
+requires_mp=10
+modifier_damage=multiply,80,0
+
+
+
+####
+### Throw Axe
+####
+
+[power]
+id=27
+INCLUDE powers/base/warrior/throw_axe.txt
+requires_mp=3
+modifier_damage=multiply,120,0
+
+[power]
+id=28
+INCLUDE powers/base/warrior/throw_axe.txt
+requires_mp=6
+modifier_damage=multiply,140,0
+
+[power]
+id=29
+INCLUDE powers/base/warrior/throw_axe.txt
+requires_mp=9
+modifier_damage=multiply,160,0
+
+[power]
+id=30
+INCLUDE powers/base/warrior/throw_axe.txt
+requires_mp=12
+modifier_damage=multiply,180,0
+
+[power]
+id=31
+INCLUDE powers/base/warrior/throw_axe.txt
+requires_mp=15
+modifier_damage=multiply,200,0
+
+
+
+####
+### Quake
+####
+
+[power]
+id=32
+INCLUDE powers/base/warrior/quake.txt
+requires_mp=4
+modifier_damage=multiply,40,0
+post_effect=knockback,5,100ms
+
+[power]
+id=33
+INCLUDE powers/base/warrior/quake.txt
+requires_mp=8
+modifier_damage=multiply,60,0
+post_effect=knockback,10,100ms
+
+[power]
+id=34
+INCLUDE powers/base/warrior/quake.txt
+requires_mp=12
+modifier_damage=multiply,80,0
+post_effect=knockback,15,100ms
+
+[power]
+id=35
+INCLUDE powers/base/warrior/quake.txt
+requires_mp=16
+modifier_damage=multiply,100,0
+post_effect=knockback,20,100ms
+
+[power]
+id=36
+INCLUDE powers/base/warrior/quake.txt
+requires_mp=20
+modifier_damage=multiply,120,0
+post_effect=knockback,25,100ms
+
+
+
+####
+### Stone Wall
+####
+
+[power]
+id=37
+INCLUDE powers/base/warrior/stone_wall.txt
+
+[power]
+id=38
+INCLUDE powers/base/warrior/stone_wall.txt
+
+[power]
+id=39
+INCLUDE powers/base/warrior/stone_wall.txt
+
+[power]
+id=40
+INCLUDE powers/base/warrior/stone_wall.txt
+
+[power]
+id=41
+INCLUDE powers/base/warrior/stone_wall.txt
+

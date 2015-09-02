@@ -3,18 +3,19 @@ width=60
 height=60
 tilewidth=64
 tileheight=32
+orientation=isometric
 music=music/overworld_theme.ogg
 tileset=tilesetdefs/tileset_grassland.txt
 title=Goblin Camp
 
 [tilesets]
-tileset=../../../../flare-game/tiled/grassland/tiled_collision.png,64,32,0,0
-tileset=../../../../flare-game/tiled/grassland/grassland.png,64,128,0,0
-tileset=../../../../flare-game/tiled/grassland/grassland_water.png,64,64,0,32
-tileset=../../../../flare-game/tiled/grassland/grassland_structures.png,64,256,0,0
-tileset=../../../../flare-game/tiled/grassland/grassland_trees.png,128,256,-32,0
-tileset=../../../../flare-game/tiled/grassland/set_rules.png,64,32,0,0
-tileset=../../../../flare-game/tiled/grassland/tiled_grassland_2x2.png,128,64,0,16
+tileset=../../../tiled/grassland/tiled_collision.png,64,32,0,0
+tileset=../../../tiled/grassland/grassland.png,64,128,0,0
+tileset=../../../tiled/grassland/grassland_water.png,64,64,0,32
+tileset=../../../tiled/grassland/grassland_structures.png,64,256,0,0
+tileset=../../../tiled/grassland/grassland_trees.png,128,256,-32,0
+tileset=../../../tiled/grassland/set_rules.png,64,32,0,0
+tileset=../../../tiled/grassland/tiled_grassland_2x2.png,128,64,0,16
 
 [layer]
 type=background
@@ -107,8 +108,8 @@ data=
 52,131,0,0,0,70,58,0,0,0,52,0,0,0,0,0,0,0,0,0,0,0,125,0,0,0,0,0,54,0,0,0,0,0,0,0,0,0,0,56,68,0,254,0,0,0,0,70,51,62,0,0,0,0,0,0,0,0,0,0,
 59,67,0,0,0,50,0,0,0,0,48,0,0,0,0,0,121,0,0,240,0,0,0,0,0,127,0,0,69,61,0,0,0,0,0,0,0,0,56,64,0,0,116,0,0,0,0,50,0,0,0,0,0,0,0,0,0,0,0,0,
 0,52,0,0,0,69,57,0,0,0,63,71,0,0,0,0,0,0,74,75,0,0,0,0,0,0,0,0,0,50,0,0,0,0,0,0,0,60,68,0,248,0,0,0,0,0,0,65,61,0,0,0,0,0,0,0,0,0,0,0,
-0,48,0,0,0,0,65,61,0,0,0,48,0,243,0,124,73,0,0,0,126,0,0,0,0,0,0,117,0,65,49,49,57,0,0,56,49,64,0,116,0,114,0,115,123,0,0,0,54,0,0,0,0,0,0,0,0,0,0,0,
-0,48,243,0,0,0,0,54,0,0,60,64,0,0,0,0,72,0,0,0,0,0,0,0,0,0,0,114,0,0,247,0,69,53,53,64,128,0,124,0,0,0,0,0,0,0,126,0,50,0,0,0,0,0,0,0,0,0,0,0,
+0,48,0,0,0,0,65,61,0,0,0,48,0,243,0,124,73,0,0,0,126,0,0,0,0,0,0,117,0,65,49,49,57,0,0,0,0,48,0,116,0,114,0,115,123,0,0,0,54,0,0,0,0,0,0,0,0,0,0,0,
+0,48,243,0,0,0,0,54,0,0,60,64,0,0,0,0,72,0,0,0,0,0,0,0,0,0,0,114,0,0,247,0,69,53,53,226,227,64,124,0,0,0,0,0,0,0,126,0,50,0,0,0,0,0,0,0,0,0,0,0,
 0,63,71,0,0,0,0,65,53,49,68,0,0,0,0,0,0,0,0,0,0,0,0,0,244,0,0,0,0,0,0,0,241,0,122,125,0,0,0,0,136,0,0,0,0,0,0,0,69,49,0,0,0,0,0,0,0,0,0,0,
 0,0,48,0,246,0,0,0,0,0,0,0,0,0,0,0,117,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,124,0,0,0,0,0,0,0,0,0,0,0,0,50,0,0,0,0,0,0,0,0,0,
 0,0,63,51,51,67,0,0,0,0,0,0,124,0,0,0,0,0,0,0,66,51,67,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,127,0,0,0,252,0,0,126,0,0,69,53,61,0,0,0,0,0,0,0,
@@ -172,7 +173,7 @@ data=
 1,1,0,0,0,1,3,3,3,3,1,2,2,2,2,2,0,0,0,1,2,2,2,2,2,0,0,0,1,1,3,3,3,3,3,3,3,3,1,1,2,2,2,0,0,0,0,1,3,3,3,3,3,3,3,3,3,3,3,3,
 3,1,0,0,0,1,1,3,3,3,1,1,2,2,2,2,0,0,2,2,0,2,2,2,2,2,2,2,0,1,3,3,3,3,3,3,3,1,1,2,2,2,2,2,0,0,0,1,1,3,3,3,3,3,3,3,3,3,3,3,
 3,1,0,0,0,0,1,1,3,3,3,1,2,2,2,2,2,0,0,0,0,0,2,2,2,2,2,2,2,1,1,1,1,3,3,1,1,1,0,2,2,2,2,2,0,0,0,0,1,3,3,3,3,3,3,3,3,3,3,3,
-3,1,1,0,0,0,0,1,3,3,1,1,2,2,2,0,2,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,1,1,1,1,2,0,0,0,2,2,2,2,2,0,0,0,1,3,3,3,3,3,3,3,3,3,3,3,
+3,1,1,0,0,0,0,1,3,3,1,1,2,2,2,0,2,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,1,1,1,0,0,1,0,0,2,2,2,2,2,0,0,0,1,3,3,3,3,3,3,3,3,3,3,3,
 3,1,1,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,2,2,2,2,2,0,0,0,1,1,3,3,3,3,3,3,3,3,3,3,
 3,3,1,0,1,0,0,0,0,0,0,0,2,2,2,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,0,0,0,0,2,2,2,2,0,0,0,0,0,0,1,3,3,3,3,3,3,3,3,3,
 3,3,1,1,1,1,0,0,0,0,0,0,2,2,2,0,0,0,0,0,1,1,1,0,0,0,2,2,2,2,2,2,2,2,2,2,0,2,2,2,2,2,2,2,1,0,0,0,0,0,1,1,1,3,3,3,3,3,3,3,
@@ -212,5 +213,251 @@ data=
 # to Stonewood
 type=on_trigger
 location=4,1,4,1
+hotspot=location
 intermap=maps/stonewood.txt,52,76
+tooltip=Stonewood
+
+[event]
+# lumber
+type=on_trigger
+location=13,6,1,1
+hotspot=location
+mapmod=background,12,6,198;object,13,6,0;collision,12,6,0;collision,13,6,0
+reachable_from=14,6,2,1
+repeat=false
+requires_not_status=emp_goblincamp_shortcut
+set_status=emp_goblincamp_shortcut
+soundfx=soundfx/inventory/inventory_wood.ogg
+tooltip=Lumber
+
+[event]
+# open shortcut (on load)
+type=on_load
+location=12,4,1,1
+mapmod=background,12,6,198;object,13,6,0;collision,12,6,0;collision,13,6,0
+requires_status=emp_goblincamp_shortcut
+
+[event]
+# Supplies
+type=on_trigger
+location=7,29,1,1
+hotspot=location
+loot=loot/level_1.txt
+mapmod=object,7,29,97
+repeat=false
+soundfx=soundfx/wood_open.ogg
+tooltip=Supplies
+
+[event]
+# Supplies
+type=on_trigger
+location=31,31,1,1
+hotspot=location
+loot=loot/level_1.txt
+mapmod=object,31,31,99
+repeat=false
+soundfx=soundfx/wood_open.ogg
+tooltip=Supplies
+
+[event]
+# Supplies
+type=on_trigger
+location=53,39,1,1
+hotspot=location
+loot=loot/level_1.txt
+mapmod=object,53,39,99
+repeat=false
+soundfx=soundfx/wood_open.ogg
+tooltip=Supplies
+
+[event]
+# Supplies
+type=on_trigger
+location=55,38,1,1
+hotspot=location
+loot=loot/level_1.txt
+mapmod=object,55,38,97
+repeat=false
+soundfx=soundfx/wood_open.ogg
+tooltip=Supplies
+
+[event]
+# Wind and crickets sound effect
+type=on_load
+location=0,0,1,1
+soundfx=soundfx/environment/wind_loop.ogg
+
+[event]
+# River sound
+type=on_load
+location=12,8,1,1
+soundfx=soundfx/environment/river_loop.ogg
+
+[event]
+# River sound
+type=on_load
+location=13,18,1,1
+soundfx=soundfx/environment/river_loop.ogg
+
+[event]
+# River sound
+type=on_load
+location=30,28,1,1
+soundfx=soundfx/environment/river_loop.ogg
+
+[event]
+# River sound
+type=on_load
+location=42,31,1,1
+soundfx=soundfx/environment/river_loop.ogg
+
+[event]
+# River sound
+type=on_load
+location=31,38,1,1
+soundfx=soundfx/environment/river_loop.ogg
+
+[event]
+# River sound
+type=on_load
+location=28,51,1,1
+soundfx=soundfx/environment/river_loop.ogg
+
+[event]
+# River sound
+type=on_load
+location=18,38,1,1
+soundfx=soundfx/environment/river_loop.ogg
+
+[event]
+# River sound
+type=on_load
+location=14,27,1,1
+soundfx=soundfx/environment/river_loop.ogg
+
+[event]
+# Bird twitter
+type=on_load
+location=19,17,1,1
+soundfx=soundfx/environment/bird_twitter_loop.ogg
+
+[event]
+# Raven sound effect
+type=on_load
+location=5,11,1,1
+soundfx=soundfx/environment/raven_loop.ogg
+
+[event]
+# Forrest owl sound effect
+type=on_load
+location=4,27,1,1
+soundfx=soundfx/environment/forest_owl_loop.ogg
+
+[event]
+# Raven sound effect
+type=on_load
+location=26,49,1,1
+soundfx=soundfx/environment/raven_loop.ogg
+
+[event]
+# Forrest owl sound effect
+type=on_load
+location=42,43,1,1
+soundfx=soundfx/environment/forest_owl_loop.ogg
+
+[event]
+# Bird twitter
+type=on_load
+location=54,34,1,1
+soundfx=soundfx/environment/bird_twitter_loop.ogg
+
+[event]
+# Raven sound effect
+type=on_load
+location=40,23,1,1
+soundfx=soundfx/environment/raven_loop.ogg
+
+[event]
+# to Merrimead Swamp
+type=on_trigger
+location=53,14,1,4
+hotspot=location
+intermap=maps/merrimead_swamp.txt,3,17
+tooltip=Merrimead Swamp
+
+[event]
+# to Goblin Cave
+type=on_trigger
+location=35,25,2,1
+hotspot=location
+intermap=maps/goblin_cave.txt,18,46
+tooltip=Goblin Cave
+
+[enemy]
+type=goblin
+location=2,22,5,8
+level=1
+number=2,3
+
+[enemy]
+type=goblin
+location=17,24,7,4
+level=1
+number=2,3
+wander_radius=1
+
+[enemy]
+type=goblin
+location=18,43,6,4
+level=1
+number=2
+wander_radius=1
+
+[enemy]
+type=goblin_spearman
+location=36,37,1,1
+level=2
+number=1
+wander_radius=0
+
+[enemy]
+type=goblin
+location=42,34,5,2
+level=1
+number=1,2
+
+[enemy]
+type=goblin
+location=50,33,6,7
+level=1
+number=3
+
+[enemy]
+type=goblin
+location=33,12,6,5
+level=1
+number=2,3
+
+[enemy]
+type=undead
+location=25,15,5,5
+level=1
+number=2
+wander_radius=1
+
+[enemy]
+type=undead
+location=18,5,7,5
+level=1
+number=2,3
+
+[enemy]
+type=goblin
+location=31,39,3,4
+level=1
+number=2
+
+[npc]
+type=npcs/traveling_merchant.txt
+location=21,35,1,1
 

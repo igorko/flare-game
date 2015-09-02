@@ -1,0 +1,33 @@
+INCLUDE enemies/base/zombie.txt
+
+name=Zombie Brute
+level=3
+categories=zombie_brute,zombie,undead,dungeon
+xp=5
+
+# combat stats
+hp=100
+speed=5
+turn_delay=200ms
+chance_pursue=30
+
+power=melee,1,15
+
+accuracy=78
+avoidance=28
+
+dmg_melee_min=20
+dmg_melee_max=30
+dmg_ment_min=25
+dmg_ment_max=60
+absorb_min=6
+absorb_max=6
+cooldown=400ms
+
+# loot
+loot=loot/leveled_low.txt
+
+# leather chest, pants
+loot=81,5
+loot=83,5
+

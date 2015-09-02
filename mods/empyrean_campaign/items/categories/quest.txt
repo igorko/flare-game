@@ -1,0 +1,41 @@
+[item]
+id=1000
+name=Krolan's Key
+INCLUDE items/base/misc/key.txt
+quality=unique
+item_type=quest
+pickup_status=emp_krolan_key
+
+[item]
+id=1001
+name=Krolan's Emerald
+INCLUDE items/base/gems/emerald.txt
+quality=unique
+item_type=quest
+pickup_status=emp_krolan_emerald
+
+[item]
+id=1002
+name=Merchant's Journal
+INCLUDE items/base/misc/book.txt
+quality=unique
+item_type=quest
+pickup_status=emp_journal_found
+book=books/merchants_journal.txt
+
+[item]
+id=1003
+name=Ardwen's Ring
+INCLUDE items/base/rings/silver_3.txt
+quality=unique
+item_type=quest
+pickup_status=emp_ardwen_ring
+
+[item]
+id=1004
+name=St. Maria Key
+INCLUDE items/base/misc/key.txt
+quality=unique
+item_type=quest
+pickup_status=emp_stmaria1_key
+

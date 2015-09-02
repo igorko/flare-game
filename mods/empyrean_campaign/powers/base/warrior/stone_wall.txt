@@ -1,0 +1,10 @@
+name=Stone Wall
+description=Each level grants an additional 125 HP and 2 absorption.
+type=fixed
+icon=11
+buff=true
+passive=true
+post_effect=hp,125,0
+post_effect=absorb_min,2,0
+post_effect=absorb_max,2,0
+

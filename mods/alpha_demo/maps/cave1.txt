@@ -3,6 +3,7 @@ width=100
 height=100
 tilewidth=64
 tileheight=32
+orientation=isometric
 location=4,12,5
 music=music/cave_theme.ogg
 tileset=tilesetdefs/tileset_cave.txt
@@ -329,13 +330,17 @@ data=
 # exit to goblin warrens
 type=on_trigger
 location=2,12,1,2
+hotspot=location
 intermap=maps/goblin_warrens.txt,51,14
+tooltip=Goblin Warrens
 
 [event]
 # exit to lost mines level 1
 type=on_trigger
 location=15,68,2,1
+hotspot=location
 intermap=maps/lost_mines1.txt,53,5
+tooltip=Lost Mines Level 1
 
 [event]
 type=on_trigger
@@ -387,9 +392,8 @@ repeat=false
 [event]
 type=on_trigger
 location=8,8,5,5
-power=134
-power_path=12,12,hero
 repeat=false
+spawn=antlion_hatchling,12,9;antlion_hatchling,12,12
 
 [event]
 # crate in nest hallway
@@ -421,14 +425,6 @@ mapmod=object,2,30,178
 repeat=false
 soundfx=soundfx/wood_open.ogg
 tooltip=Barrel
-
-[event]
-# two hatchlings spawn
-type=on_trigger
-location=8,8,5,5
-power=134
-power_path=12,9,hero
-repeat=false
 
 [event]
 type=on_trigger

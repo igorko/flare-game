@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="isometric" width="40" height="40" tilewidth="64" tileheight="32" backgroundcolor="#000000">
+<map version="1.0" orientation="isometric" renderorder="right-down" width="40" height="40" tilewidth="64" tileheight="32" backgroundcolor="#000000" nextobjectid="17">
  <properties>
   <property name="music" value="music/dungeon_theme.ogg"/>
   <property name="tileset" value="tilesetdefs/tileset_dungeon.txt"/>
   <property name="title" value="Hyperspace"/>
  </properties>
- <tileset firstgid="1" name="collision" tilewidth="64" tileheight="32">
+ <tileset firstgid="1" name="collision" tilewidth="64" tileheight="32" tilecount="15">
   <image source="../dungeon/tiled_collision.png" width="960" height="32"/>
  </tileset>
- <tileset firstgid="16" name="dungeon" tilewidth="64" tileheight="128">
+ <tileset firstgid="16" name="dungeon" tilewidth="64" tileheight="128" tilecount="240">
   <image source="../dungeon/tiled_dungeon.png" width="1024" height="1920"/>
  </tileset>
- <tileset firstgid="256" name="set_rules" tilewidth="64" tileheight="32">
+ <tileset firstgid="256" name="set_rules" tilewidth="64" tileheight="32" tilecount="8">
   <image source="../dungeon/set_rules.png" width="128" height="128"/>
  </tileset>
- <tileset firstgid="264" name="tiled_dungeon_2x2" tilewidth="128" tileheight="64">
+ <tileset firstgid="264" name="tiled_dungeon_2x2" tilewidth="128" tileheight="64" tilecount="16">
   <tileoffset x="0" y="16"/>
   <image source="../dungeon/tiled_dungeon_2x2.png" width="512" height="256"/>
  </tileset>
- <tileset firstgid="280" name="door_left" tilewidth="64" tileheight="128">
+ <tileset firstgid="280" name="door_left" tilewidth="64" tileheight="128" tilecount="2">
   <tileoffset x="-16" y="-8"/>
   <image source="../dungeon/door_left.png" width="128" height="128"/>
  </tileset>
- <tileset firstgid="282" name="door_right" tilewidth="64" tileheight="128">
+ <tileset firstgid="282" name="door_right" tilewidth="64" tileheight="128" tilecount="2">
   <tileoffset x="16" y="-8"/>
   <image source="../dungeon/door_right.png" width="128" height="128"/>
  </tileset>
- <tileset firstgid="284" name="stairs" tilewidth="256" tileheight="256">
+ <tileset firstgid="284" name="stairs" tilewidth="256" tileheight="256" tilecount="4">
   <tileoffset x="0" y="48"/>
   <image source="../dungeon/stairs.png" width="1024" height="256"/>
  </tileset>
@@ -162,26 +162,58 @@
 3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
 </data>
  </layer>
- <objectgroup name="event" width="40" height="40">
-  <object type="on_trigger" x="288" y="288" width="64" height="64">
+ <objectgroup name="event">
+  <object id="1" name="to Perdition Harbor" type="on_trigger" x="288" y="288" width="64" height="64">
    <properties>
+    <property name="hotspot" value="location"/>
     <property name="intermap" value="maps/perdition_harbor.txt,15,23"/>
+    <property name="soundfx" value="soundfx/environment/teleporter.ogg,0,0"/>
+    <property name="tooltip" value="Perdition Harbor"/>
    </properties>
   </object>
-  <object type="on_trigger" x="512" y="224" width="64" height="64">
+  <object id="2" name="to Stonewood" type="on_trigger" x="512" y="224" width="64" height="64">
    <properties>
+    <property name="hotspot" value="location"/>
     <property name="intermap" value="maps/stonewood.txt,59,43"/>
+    <property name="requires_status" value="emp_waypoint_1"/>
+    <property name="soundfx" value="soundfx/environment/teleporter.ogg,0,0"/>
+    <property name="tooltip" value="Stonewood"/>
    </properties>
   </object>
-  <object x="704" y="224" width="64" height="64"/>
-  <object x="928" y="288" width="64" height="64"/>
-  <object x="992" y="512" width="64" height="64"/>
-  <object x="992" y="704" width="64" height="64"/>
-  <object x="928" y="928" width="64" height="64"/>
-  <object x="704" y="992" width="64" height="64"/>
-  <object x="512" y="992" width="64" height="64"/>
-  <object x="288" y="928" width="64" height="64"/>
-  <object x="224" y="704" width="64" height="64"/>
-  <object x="224" y="512" width="64" height="64"/>
+  <object id="3" name="to Lochport Cemetery" type="on_trigger" x="704" y="224" width="64" height="64">
+   <properties>
+    <property name="hotspot" value="location"/>
+    <property name="intermap" value="maps/lochport_cemetery.txt,44,13"/>
+    <property name="requires_status" value="emp_waypoint_2"/>
+    <property name="soundfx" value="soundfx/environment/teleporter.ogg,0,0"/>
+    <property name="tooltip" value="Lochport Cemetery"/>
+   </properties>
+  </object>
+  <object id="4" x="928" y="288" width="64" height="64"/>
+  <object id="5" x="992" y="512" width="64" height="64"/>
+  <object id="6" x="992" y="704" width="64" height="64"/>
+  <object id="7" x="928" y="928" width="64" height="64"/>
+  <object id="8" x="704" y="992" width="64" height="64"/>
+  <object id="9" x="512" y="992" width="64" height="64"/>
+  <object id="10" x="288" y="928" width="64" height="64"/>
+  <object id="11" x="224" y="704" width="64" height="64"/>
+  <object id="12" x="224" y="512" width="64" height="64"/>
+  <object id="13" name="Wind sound" type="on_load" x="0" y="0" width="32" height="32">
+   <properties>
+    <property name="soundfx" value="soundfx/environment/cave_wind_loop.ogg"/>
+   </properties>
+  </object>
+  <object id="14" name="unlock Stonewood" type="on_load" x="512" y="160" width="32" height="32">
+   <properties>
+    <property name="mapmod" value="background,16,8,265"/>
+    <property name="requires_status" value="emp_waypoint_1"/>
+   </properties>
+  </object>
+  <object id="15" name="unlock Valverde Cemetery" type="on_load" x="704" y="160" width="32" height="32">
+   <properties>
+    <property name="mapmod" value="background,22,8,265"/>
+    <property name="requires_status" value="emp_waypoint_2"/>
+   </properties>
+  </object>
  </objectgroup>
 </map>

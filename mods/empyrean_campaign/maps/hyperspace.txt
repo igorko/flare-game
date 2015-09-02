@@ -3,18 +3,19 @@ width=40
 height=40
 tilewidth=64
 tileheight=32
+orientation=isometric
 music=music/dungeon_theme.ogg
 tileset=tilesetdefs/tileset_dungeon.txt
 title=Hyperspace
 
 [tilesets]
-tileset=../../../../flare-game/tiled/dungeon/tiled_collision.png,64,32,0,0
-tileset=../../../../flare-game/tiled/dungeon/tiled_dungeon.png,64,128,0,0
-tileset=../../../../flare-game/tiled/dungeon/set_rules.png,64,32,0,0
-tileset=../../../../flare-game/tiled/dungeon/tiled_dungeon_2x2.png,128,64,0,16
-tileset=../../../../flare-game/tiled/dungeon/door_left.png,64,128,-16,-8
-tileset=../../../../flare-game/tiled/dungeon/door_right.png,64,128,16,-8
-tileset=../../../../flare-game/tiled/dungeon/stairs.png,256,256,0,48
+tileset=../../../tiled/dungeon/tiled_collision.png,64,32,0,0
+tileset=../../../tiled/dungeon/tiled_dungeon.png,64,128,0,0
+tileset=../../../tiled/dungeon/set_rules.png,64,32,0,0
+tileset=../../../tiled/dungeon/tiled_dungeon_2x2.png,128,64,0,16
+tileset=../../../tiled/dungeon/door_left.png,64,128,-16,-8
+tileset=../../../tiled/dungeon/door_right.png,64,128,16,-8
+tileset=../../../tiled/dungeon/stairs.png,256,256,0,48
 
 [layer]
 type=background
@@ -149,12 +150,51 @@ data=
 3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
 
 [event]
+# to Perdition Harbor
 type=on_trigger
 location=9,9,2,2
+hotspot=location
 intermap=maps/perdition_harbor.txt,15,23
+soundfx=soundfx/environment/teleporter.ogg,0,0
+tooltip=Perdition Harbor
 
 [event]
+# to Stonewood
 type=on_trigger
 location=16,7,2,2
+hotspot=location
 intermap=maps/stonewood.txt,59,43
+requires_status=emp_waypoint_1
+soundfx=soundfx/environment/teleporter.ogg,0,0
+tooltip=Stonewood
+
+[event]
+# to Lochport Cemetery
+type=on_trigger
+location=22,7,2,2
+hotspot=location
+intermap=maps/lochport_cemetery.txt,44,13
+requires_status=emp_waypoint_2
+soundfx=soundfx/environment/teleporter.ogg,0,0
+tooltip=Lochport Cemetery
+
+[event]
+# Wind sound
+type=on_load
+location=0,0,1,1
+soundfx=soundfx/environment/cave_wind_loop.ogg
+
+[event]
+# unlock Stonewood
+type=on_load
+location=16,5,1,1
+mapmod=background,16,8,265
+requires_status=emp_waypoint_1
+
+[event]
+# unlock Valverde Cemetery
+type=on_load
+location=22,5,1,1
+mapmod=background,22,8,265
+requires_status=emp_waypoint_2
 

@@ -3,6 +3,7 @@ width=80
 height=80
 tilewidth=64
 tileheight=32
+orientation=isometric
 music=music/cave_theme.ogg
 tileset=tilesetdefs/tileset_cave.txt
 title=Cave of Living Bones 2
@@ -267,19 +268,25 @@ data=
 # to Cave 1
 type=on_trigger
 location=36,75,3,1
+hotspot=location
 intermap=maps/cave_of_living_bones1.txt,33,3
+tooltip=Cave of Living Bones 1
 
 [event]
 # to Cave 3
 type=on_trigger
 location=2,36,1,4
+hotspot=location
 intermap=maps/cave_of_living_bones3.txt,47,19
+tooltip=Cave of Living Bones 3
 
 [event]
 # to Atrium
 type=on_trigger
 location=32,3,1,1
+hotspot=location
 intermap=maps/brothers_lair_atrium.txt,15,46
+tooltip=Brothers' Lair Atrium
 
 [event]
 # Barrel
@@ -330,6 +337,8 @@ type=on_trigger
 location=47,44,1,1
 hotspot=45,42,3,3
 mapmod=object,47,44,163
+msg=Run! You don't want to be caught in the blast of your own explosion!
+
 requires_not_status=lb_explosive_set
 requires_status=lb_has_explosive
 set_status=lb_explosive_set

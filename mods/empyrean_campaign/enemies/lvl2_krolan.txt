@@ -1,0 +1,37 @@
+INCLUDE enemies/base/skeleton.txt
+
+name=Krolan
+level=2
+categories=krolan
+rarity=rare
+xp=8
+
+# combat stats
+hp=420
+speed=3.5
+turn_delay=400ms
+chance_pursue=10
+
+power=melee,164,20
+
+accuracy=95
+avoidance=15
+poise=18
+
+dmg_melee_min=70
+dmg_melee_max=80
+cooldown=1100ms
+
+absorb_min=2
+absorb_max=2
+
+# quest key
+quest_loot=emp_krolan_init,emp_krolan_key,1000
+
+# loot
+loot_count=3,4
+loot=loot/level_2.txt
+
+# Krolan's Pick
+loot=67,1
+

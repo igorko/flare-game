@@ -1,0 +1,34 @@
+INCLUDE enemies/base/skeleton_archer.txt
+
+name=Skeleton Sniper
+level=3
+categories=skeleton_archer,skeleton,undead,dungeon,grassland
+rarity=rare
+xp=8
+
+# combat stats
+hp=150
+speed=3.5
+turn_delay=200ms
+chance_pursue=5
+
+power=melee,164,5
+power=ranged,171,3
+
+accuracy=105
+avoidance=30
+poise=16
+
+dmg_melee_min=35
+dmg_melee_max=45
+dmg_ranged_min=45
+dmg_ranged_max=60
+absorb_min=2
+absorb_max=3
+
+cooldown=2000ms
+
+# loot
+loot=loot/level_3.txt
+
+
